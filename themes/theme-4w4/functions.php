@@ -139,8 +139,20 @@ add_action( 'widgets_init', 'theme_4w4_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
+
+/* echo "<pre>";
+echo filemtime(get_template_directory(). "/style.css");
+echo "</pre>";
+wp_die(); //le programme s'arrête là; pour faire des tests
+ */
+
+// wp_register_style
+
 function theme_4w4_scripts() {
 	wp_enqueue_style( 'theme-4w4-style', get_stylesheet_uri(), array(), _S_VERSION );
+	//wp_enqueue_style( 'theme-4w4-style', get_stylesheet_uri(), array(), filemtime(get_directory()."/style.css") );
+	
+
 	wp_style_add_data( 'theme-4w4-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'theme-4w4-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
