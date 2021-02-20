@@ -12,11 +12,11 @@ body.home::after {
     bottom: 0;
     left: 0;
     right: 0;
-    clip-path: polygon(90% 100%, 100% 100%, 70% 100%);
+    clip-path: polygon(100% 90%, 100% 100%, 70% 100%);
     background-color: rgb(30, 101, 167);
     z-index: -1;
 
-    @include desktop {
+    @include media-desktop {
         clip-path: polygon(90% 0, 100% 0, 100% 100%, 70% 100%);
     }
 }
@@ -33,7 +33,6 @@ body.home::after {
 
 }
 
-
 .site-description{
     font-family: $font__title;
     font-size: clamp(.8rem, #{"-0.875rem + 8.333vw"}, 1.5rem);
@@ -46,7 +45,7 @@ body.home::after {
     font-size: clamp(.8rem, #{"-0.875rem + 8.333vw"}, 3rem);
 }
 
-.accueil{
+.accueil{ //je n'arrive pas à ajouter la classe sur wordpress
     font-size: clamp(.8rem, #{"-0.875rem + 8.333vw"}, 2rem);
     ul{
         list-style-type: none;
