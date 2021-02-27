@@ -662,6 +662,10 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+body {
+  overflow-x: hidden;
+}
+
 .no-sidebar .site {
   display: grid;
   grid-template-columns: auto;
@@ -789,6 +793,7 @@ Version Tablette
     justify-content: space-around;
     align-items: center;
     position: static;
+    width: 100vw;
   }
 }
 
@@ -1124,4 +1129,31 @@ body.home
 /*
 
 */
+/* Local carrousel
+--------------------------------------------- */
+.carrousel {
+  display: flex;
+  width: 300vw;
+  height: 20vh;
+  transition: transform .5s;
+}
+
+.carrousel div {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrousel div:nth-of-type(1) {
+  background-color: #be4343;
+}
+
+.carrousel div:nth-of-type(2) {
+  background-color: #4dbe43;
+}
+
+.carrousel div:nth-of-type(3) {
+  background-color: #435abe;
+}
 /*# sourceMappingURL=style.css.map */

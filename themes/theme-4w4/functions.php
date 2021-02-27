@@ -149,14 +149,21 @@ wp_die(); //le programme s'arrête là; pour faire des tests
 // wp_register_style
 
 function theme_4w4_scripts() {
-	wp_enqueue_style( 'theme-4w4-style', get_stylesheet_uri(), array(), _S_VERSION ); //ce bout fait tout bugger, résultat = page blanche
-	//wp_enqueue_style( 'theme-4w4-style', get_stylesheet_uri(), array(), filemtime(get_directory()."/style.css") );
-	wp_enqueue_style( 'theme-4w4-google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap', false ); 
+	wp_register_style( 'theme-4w4-style', get_stylesheet_uri(), array(), filemtime(get_template_directory(). "/style.css"), 'all' );
+	wp_enqueue_style( 'theme-4w4-style' );
 
 
 	wp_style_add_data( 'theme-4w4-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'theme-4w4-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'theme-4w4-burger', get_template_directory_uri() . '/js/burger.js', array(), _S_VERSION, true );
+	
+	wp_register_script( 'theme-4w4-carrousel', get_template_directory_uri() . '/js/carrousel.js', array(), _S_VERSION, true );
+
+
+	if (is_front_page()) {
+		wp_enqueue_script ( 'theme-4w4-carrousel' );
+	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

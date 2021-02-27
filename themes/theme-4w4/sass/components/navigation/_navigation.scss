@@ -1,6 +1,6 @@
 .main-navigation {
 	display: block;
-	width: 100%;
+	width: 100vw;
 
 	ul {
 		display: none;
@@ -80,13 +80,12 @@ Bouton burger
 	padding: 0rem;
 	border: 0rem;
 	margin-left: 3rem;
-	transition: transform .20s;
-	transform: rotate(0deg);
+	background-color: #fff;
 }
-.menu-toggle:hover,
+/* .menu-toggle:hover,
 .menu-toggle:focus {
     background: #f6f7f8;
-}
+} */
 
 .menu-toggle:focus {
     outline: 1px solid #fff;
@@ -96,9 +95,7 @@ Bouton burger
 .menu-toggle:active {
     transform: scale(0.99);
 }
-.main-navigation.toggled .menu-toggle {
-	transform: rotate(90deg);
-}
+
 
 /* Small menu. */
 .menu-toggle,
@@ -121,6 +118,7 @@ Version Tablette
 		justify-content: space-around;
 		align-items: center;
 		position: static;
+		width: 100vw;
 	}
 }
 
