@@ -29,7 +29,7 @@ body {
 
 .site-branding, #primary, #colophon {
 	margin-left: .5rem;
-	@include desktop {
+	@include media-desktop {
 		margin-left: 3rem;
 	}
 }

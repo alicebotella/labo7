@@ -39,6 +39,7 @@ body.home::after {
     margin-bottom: 0;
     a{
         text-decoration: none;
+        font-size: clamp(.9rem, #{"-0.875rem + 6.333vw"}, 2.5rem);
     }
 
 }
@@ -77,12 +78,3 @@ body.home {
 .entry-content ul li {
     text-decoration: none;
 }
-
-
-/*
-body.home
-*/
-
-/*
-
-*/

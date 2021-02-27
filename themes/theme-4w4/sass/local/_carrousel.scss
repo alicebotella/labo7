@@ -10,6 +10,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 3rem;
     
         &:nth-of-type(1){
             background-color: rgb(190, 67, 67);
@@ -22,5 +23,12 @@
         }
 
     } // fin du div
+}
 
+#un, #deux, #trois {
+    border-radius: 50%;
+}
+
+#un:hover, #deux:hover, #trois:hover {
+    background-color: rgb(135, 201, 255);
 }
