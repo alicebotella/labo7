@@ -1,4 +1,3 @@
-# exercice2
-https://github.com/Alibotella/exercice2
+Dépôt: https://github.com/Alibotella/exercice2
 
-Lien du site non trouvable
+Page gitHub: https://alibotella.github.io/exercice2
