@@ -711,7 +711,7 @@ body {
   padding-left: 0;
   background-color: #005;
   position: absolute;
-  width: 100%;
+  width: 100vw;
 }
 
 .main-navigation ul ul {
@@ -788,6 +788,7 @@ Version Tablette
   .menu-toggle {
     display: none;
   }
+  .main-navigation.toggled ul,
   .main-navigation ul {
     display: flex;
     height: 2rem;
@@ -795,6 +796,16 @@ Version Tablette
     align-items: center;
     position: static;
     width: 100vw;
+  }
+  .main-navigation.toggled ul ul,
+  .main-navigation ul ul {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 }
 
