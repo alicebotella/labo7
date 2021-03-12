@@ -18,7 +18,7 @@
 			/* float: left; */
 			position: absolute;
 			top: 100%;
-			transition: left .5s;
+			transition: left .4s;
 			left: -999em;
 			z-index: 99999;
 			a {
@@ -81,6 +81,7 @@ Bouton burger
 //	transition : transform .25s;
 //	transform : rotate(0deg);
 	border : 0;
+	background-color: #fff;
 }
 .menu-toggle:hover,
 .menu-toggle:focus {

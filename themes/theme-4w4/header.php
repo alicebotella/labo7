@@ -60,9 +60,11 @@
 		<button id='deux'>2</button>
 		<button id='trois'>3</button> -->
 
-		<input type="radio" id="un" name="carrousel" checked>
-		<input type="radio" id="deux" name="carrousel">
-		<input type="radio" id="trois" name="carrousel">
+		<section class="boutRadio">
+			<input type="radio" id="un" name="carrousel" checked>
+			<input type="radio" id="deux" name="carrousel">
+			<input type="radio" id="trois" name="carrousel">
+		</section>
 
 		<?php endif ?>
 		<!-- fin carrousel -->

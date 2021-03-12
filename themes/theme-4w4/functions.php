@@ -208,3 +208,15 @@ function extraire_cours($query){
 	}
 }
 add_action('pre_get_posts', 'extraire_cours');
+
+/* ajout code prof teams */
+function extraire_cours_front_page($query){
+	if( !is_admin() && $query->is_front_page() && $query->is_main_query() ){
+
+	$query->set( 'category_name', 'cours' );
+	$query->set('posts_per_page', -1 );
+	$query->set('orderby', 'title');
+	$query->set('order', 'asc');
+}
+}
+add_action('pre_get_posts','extraire_cours_front_page');
