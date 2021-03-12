@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-<!-- ARCHIVE.PHP --> ///////////////// FRONT-PAGE.PHP
+<!-- ARCHIVE.PHP --> <!-- ///////////////// FRONT-PAGE.PHP -->
 	<main id="primary" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
@@ -29,10 +29,10 @@ get_header();
                 $titre = get_the_title();
                 $session = substr($titre, 4,1);
                 if ($precedent != $session) {
-                    echo '<p>Session : ' . $session . '</p>' ;
+                    echo '<p class="session">Session : ' . $session . '</p>' ;  //ajout classe session pour css
                 }
                 
-                echo '<p>' . $session . ' ' . $titre . '</p>' ; /* get_the_title fait apparaitre les titres -- <p> les met en liste*/
+                echo '<p class="nomCours">' . $session . ' ' . $titre . '</p>' ; /* get_the_title fait apparaitre les titres -- <p> les met en liste*/
                 $precedent = $session;
 			endwhile;
 		else :
