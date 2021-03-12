@@ -48,14 +48,22 @@
 		<!-- début carrousel -->
 		<?php
 		if ( is_front_page()) : ?>
-		<section class="carrousel">
+		<!-- section colorée -->
+		<section class="carrousel"> 
 				<div>1</div>
 				<div>2</div>
 				<div>3</div>
 		</section>
-		<button id='un'>1</button>
+
+		<!-- les boutons -->
+		<!-- <button id='un'>1</button> 
 		<button id='deux'>2</button>
-		<button id='trois'>3</button>
+		<button id='trois'>3</button> -->
+
+		<input type="radio" id="un" name="carrousel" checked>
+		<input type="radio" id="deux" name="carrousel">
+		<input type="radio" id="trois" name="carrousel">
+
 		<?php endif ?>
 		<!-- fin carrousel -->
 

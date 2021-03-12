@@ -540,7 +540,6 @@ a:hover, a:active {
 
 .main-navigation a {
   color: #d4d3bf;
-  margin-left: 3rem;
 }
 
 .main-navigation a:visited {
@@ -702,70 +701,84 @@ body {
 .main-navigation {
   display: block;
   width: 100vw;
+  /* nav-menu (ul principal) */
 }
 
 .main-navigation ul {
   display: none;
+  position: absolute;
+  width: 100%;
   list-style: none;
   margin: 0;
   padding-left: 0;
-  background-color: #005;
-  position: absolute;
-  width: 100vw;
+  background-color: #000;
+  text-align: left;
+  left: 0;
+  /* sub-menu */
 }
 
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
+  /* float: left; */
   position: absolute;
   top: 100%;
+  transition: left .5s;
   left: -999em;
   z-index: 99999;
 }
 
-.main-navigation ul ul ul {
-  left: -999em;
-  top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-  display: block;
-  left: auto;
-}
-
 .main-navigation ul ul a {
-  width: 200px;
+  width: 100%;
+  padding-left: 20px;
 }
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
-  left: auto;
+  left: 0;
+}
+
+.main-navigation ul li > a[href="#"]::after {
+  content: "+";
+  /* + = sous-menu non visible et cliquer dessus pour activer */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 90%;
+  right: 0;
+}
+
+.main-navigation ul li.focus > a[href="#"]::after,
+.main-navigation ul li > a[href="#"]:hover::after {
+  content: "-";
 }
 
 .main-navigation li {
   position: relative;
+  flex: 1;
 }
 
 .main-navigation a {
   display: block;
   text-decoration: none;
+  padding: .5rem;
 }
 
-/* -------------------------------------------------------
-Bouton burger
----------------------------------------------------------- */
+/* fin de main-navigation */
+/* -----------------------------------------------------------------------------
+Bouton burger 
+------------------------------------------------------------------------------*/
 .menu-toggle {
-  padding: 0rem;
-  border: 0rem;
-  margin-left: 3rem;
-  background-color: #fff;
+  padding: 0;
+  border: 0;
 }
 
-/* .menu-toggle:hover,
+.menu-toggle:hover,
 .menu-toggle:focus {
-    background: #f6f7f8;
-} */
+  background: #fafbfc;
+}
+
 .menu-toggle:focus {
   outline: 1px solid #fff;
   outline-offset: -4px;
@@ -775,14 +788,18 @@ Bouton burger
   transform: scale(0.99);
 }
 
-/* Small menu. */
+/*
+.main-navigation.toggled .menu-toggle{
+	transform : rotate(90deg);
+}
+*/
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
-/* -----------------------------------------------------------------------------
-Version Tablette
+/* ---------------------------------------------------------------------------
+menu tablet
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
@@ -791,24 +808,27 @@ Version Tablette
   .main-navigation.toggled ul,
   .main-navigation ul {
     display: flex;
-    height: 2rem;
-    justify-content: space-around;
-    align-items: center;
     position: static;
-    width: 100vw;
+    justify-content: space-around;
+  }
+  .main-navigation.toggled ul a[href="#"]::after,
+  .main-navigation ul a[href="#"]::after {
+    display: none;
+  }
+  .main-navigation.toggled ul li:hover ul,
+  .main-navigation ul li:hover ul {
+    display: block;
+    position: absolute;
+    width: 300px;
   }
   .main-navigation.toggled ul ul,
   .main-navigation ul ul {
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    display: none;
   }
 }
 
+/* -----------------------------------------------------------------------
+   ----------------------------------------------------------------------- */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
