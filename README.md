@@ -2,7 +2,7 @@ Collège de Maisonneuve
 Alice Botella-Vigneault
 mardi groupe-1
 
-courte description du site
+Site du TIM avec la grille des cours offerts
 
 
 Dépôt: https://github.com/alibotella/tp1
