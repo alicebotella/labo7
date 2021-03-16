@@ -1157,17 +1157,46 @@ body.home::after {
   font-size: clamp(0.8rem, -0.875rem + 8.333vw, 3rem);
 }
 
-.accueil {
-  font-size: clamp(0.8rem, -0.875rem + 8.333vw, 2rem);
+/* .accueil{ //je n'arrive pas à ajouter la classe sur wordpress
+    font-size: clamp(.8rem, -0.875rem + 8.333vw, 2rem);
+    ul{
+        list-style-type: none;
+    }
+
+    img{
+        display: block;
+        border-radius: 50%;
+    }
+} */
+.list-cours {
+  display: flex;
+  flex-direction: column;
 }
 
-.accueil ul {
-  list-style-type: none;
+.list-cours section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.accueil img {
-  display: block;
-  border-radius: 50%;
+.list-cours section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  border: 1px solid #aaa;
+}
+
+.list-cours section article p {
+  font-size: .7rem;
+  font-weight: bold;
+}
+
+.list-cours section article a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 body.home .site-title {
