@@ -1180,12 +1180,14 @@ body.home::after {
   font-size: 30px;
   text-align: center;
   width: 100%;
+  align-items: center;
 }
 
 .list-cours section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  /* transition 1 : hover */
 }
 
 .list-cours section article {
@@ -1212,6 +1214,10 @@ body.home::after {
   font-weight: bold;
   text-decoration: none;
   text-align: center;
+}
+
+.list-cours section article:hover {
+  background-color: #c1e6ff;
 }
 
 body.home .site-title {
@@ -1243,7 +1249,7 @@ TABLETTE
 /* -----------------------------------------------
 DESKTOP
 -------------------------------------------------- */
-@media screen and (max-width: 1600px) and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .list-cours section article {
     display: flex;
     flex-direction: column;
@@ -1299,7 +1305,7 @@ DESKTOP
 .boutRadio {
   text-align: center;
   width: 100vw;
-  background-color: paleturquoise;
+  background-color: #c1e6ff;
 }
 
 /* Local burger
