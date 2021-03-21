@@ -1174,6 +1174,7 @@ body.home::after {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
+  /* transition 2 : hover */
 }
 
 .list-cours h2 {
@@ -1181,6 +1182,11 @@ body.home::after {
   text-align: center;
   width: 100%;
   align-items: center;
+  transition: .5s;
+}
+
+.list-cours h2:hover {
+  font-size: 40px;
 }
 
 .list-cours section {
@@ -1201,6 +1207,7 @@ body.home::after {
   background-color: rgba(255, 255, 255, 0.65);
   box-shadow: 8px 8px 12px #c1e6ff;
   border: 1px solid #aaa;
+  transition: .5s;
 }
 
 .list-cours section article p {

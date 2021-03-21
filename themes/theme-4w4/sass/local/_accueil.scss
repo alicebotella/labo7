@@ -93,6 +93,12 @@ body.home::after {
         text-align: center;
         width: 100%;
         align-items: center;
+        transition: .5s;
+    }
+
+    /* transition 2 : hover */
+    h2:hover {
+        font-size: 40px;
     }
 
     section {
@@ -112,6 +118,7 @@ body.home::after {
             box-shadow: 8px 8px 12px rgb(193, 230, 255);
             
             border: 1px solid #aaa;
+            transition: .5s;
             p {
                 font-size: .7rem;
                 font-weight: bold;
