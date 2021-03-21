@@ -60,11 +60,16 @@ get_header();
 						<h2><?php echo $typeCours ?></h2>
 					<section>
 					<?php endif ?>
-				<article>
+				<article class="<?php echo $typeCours ;?>">
 					<p><?php echo $sigle . " - " . $nbHeure . " - " . $typeCours; ?> </p>
 					<a href="<?php echo get_permalink(); ?>"><?php echo $titre; ?></a>
 					<p>Session : <?php echo $session ; ?> </p>
 				</article>
+
+				<!-- condition spéciale pour donner classe à Image 2d/3d sans bug -->
+				<?php if ($typeCours == "Image 2d/3d") { /* ?>
+					<article class="Image2d3d"> <?php */ } ?> <!-- mis en commentaire, car ça fait 
+					tout bug l'affichage de Image2d3d seulement -->
 
 			<?php
 			$precedent = $typeCours;
