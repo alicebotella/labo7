@@ -1170,8 +1170,17 @@ body.home::after {
 
 header h1.page-title {
   text-align: center;
-  font-size: clamp(2rem, -0.875rem + 8.333vw, 3rem);
+  font-size: clamp(1.5rem, -0.875rem + 8.333vw, 2.5rem);
   margin-bottom: -.5rem;
+}
+
+.site-title a {
+  transition: 1s;
+}
+
+.site-title a:hover {
+  font-size: 3rem;
+  color: #1e65a7;
 }
 
 /* .accueil{ //je n'arrive pas à ajouter la classe sur wordpress
