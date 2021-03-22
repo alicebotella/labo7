@@ -1168,6 +1168,12 @@ body.home::after {
   font-size: clamp(0.8rem, -0.875rem + 8.333vw, 3rem);
 }
 
+header h1.page-title {
+  text-align: center;
+  font-size: clamp(2rem, -0.875rem + 8.333vw, 3rem);
+  margin-bottom: -.5rem;
+}
+
 /* .accueil{ //je n'arrive pas à ajouter la classe sur wordpress
     font-size: clamp(.8rem, -0.875rem + 8.333vw, 2rem);
     ul{
@@ -1221,7 +1227,7 @@ body.home::after {
 }
 
 .list-cours section article p {
-  font-size: .7rem;
+  font-size: .9rem;
   font-weight: bold;
 }
 
