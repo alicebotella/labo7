@@ -1086,6 +1086,7 @@ menu tablet
 
 /* Local accueil
 --------------------------------------------- */
+/* MOBILE FIRST */
 body {
   width: 100vw;
   height: 100vh;
@@ -1173,18 +1174,26 @@ body.home::after {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
+  /* transition 2 : hover */
 }
 
 .list-cours h2 {
   font-size: 30px;
   text-align: center;
   width: 100%;
+  align-items: center;
+  transition: .5s;
+}
+
+.list-cours h2:hover {
+  font-size: 40px;
 }
 
 .list-cours section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  /* transition 1 : hover */
 }
 
 .list-cours section article {
@@ -1192,12 +1201,13 @@ body.home::after {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 30%;
+  width: 90%;
   margin: 10px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.65);
   box-shadow: 8px 8px 12px #c1e6ff;
   border: 1px solid #aaa;
+  transition: .5s;
 }
 
 .list-cours section article p {
@@ -1213,12 +1223,52 @@ body.home::after {
   text-align: center;
 }
 
+.list-cours section article:hover {
+  background-color: #c1e6ff;
+}
+
 body.home .site-title {
   font-size: 3rem;
 }
 
 .entry-content ul li {
   text-decoration: none;
+}
+
+/* -----------------------------------------------
+TABLETTE
+-------------------------------------------------- */
+@media screen and (max-width: 1024px) and (min-width: 740px) {
+  .list-cours section article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.65);
+    box-shadow: 8px 8px 12px #c1e6ff;
+    border: 1px solid #aaa;
+  }
+}
+
+/* -----------------------------------------------
+DESKTOP
+-------------------------------------------------- */
+@media screen and (min-width: 1024px) {
+  .list-cours section article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.65);
+    box-shadow: 8px 8px 12px #c1e6ff;
+    border: 1px solid #aaa;
+  }
 }
 
 /* Local carrousel
@@ -1252,7 +1302,8 @@ body.home .site-title {
 
 #un, #deux, #trois {
   border-radius: 50%;
-  margin: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #un:hover, #deux:hover, #trois:hover {
@@ -1262,7 +1313,7 @@ body.home .site-title {
 .boutRadio {
   text-align: center;
   width: 100vw;
-  background-color: paleturquoise;
+  background-color: #c1e6ff;
 }
 
 /* Local burger

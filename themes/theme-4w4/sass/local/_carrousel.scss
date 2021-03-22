@@ -23,11 +23,62 @@
         }
 
     } // fin du div
+
+    /* animation background carrousel 1 */
+    .carr1 {
+        animation: carr1 4s linear infinite alternate both;
+    }
+
+    @keyframes carr1 {
+        0% {
+          background: rgb(190, 67, 67);
+        }
+        50% {
+          background: rgb(199, 96, 96);
+        }
+        100% {
+          background: rgb(204, 123, 123);
+        }
+    }
+
+    /* animation background carrousel 1 */
+    .carr2 {
+        animation: carr2 4s linear infinite alternate both;
+    }
+
+    @keyframes carr2 {
+        0% {
+          background: rgb(77, 190, 67);
+        }
+        50% {
+          background: rgb(107, 184, 100);
+        }
+        100% {
+          background: rgb(136, 187, 131);
+        }
+    }
+
+    .carr3 {
+        animation: carr3 4s linear infinite alternate both;
+    }
+
+    @keyframes carr3 {
+        0% {
+          background: rgb(67, 90, 190);
+        }
+        50% {
+          background: rgb(92, 110, 192);
+        }
+        100% {
+          background: rgb(123, 136, 192);
+        }
+    }
 }
 
 #un, #deux, #trois {
     border-radius: 50%;
-    margin: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #un:hover, #deux:hover, #trois:hover {

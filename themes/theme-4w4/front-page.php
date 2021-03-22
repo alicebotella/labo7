@@ -12,9 +12,9 @@ get_header();
 <!-- ARCHIVE.PHP --> ///////////////// FRONT-PAGE.PHP
 	<!-- CARROUSEL ////////////////// -->
 	<section class="carrousel"> 
-		<div>1</div>
-		<div>2</div>
-		<div>3</div>
+		<div class="carr1">1</div>
+		<div class="carr2">2</div>
+		<div class="carr3">3</div>
 	</section>
 
 	<!-- les boutons -->

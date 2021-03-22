@@ -51,13 +51,22 @@ body.home::after {
     font-weight: bold;
     color: #003;
     margin-bottom: 0;
+    animation: slider 2s;
     a{
         text-decoration: none;
         font-size: clamp(.9rem, #{"-0.875rem + 6.333vw"}, 2.5rem);
     }
-
 }
 
+@keyframes slider {
+        0% {
+            position: -100px;
+        }
+        100% {
+            position: 100px;
+        }
+    }
+    
 .site-description{
     font-family: $font__title;
     font-size: clamp(.8rem, #{"-0.875rem + 8.333vw"}, 1.5rem);

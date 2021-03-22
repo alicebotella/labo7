@@ -1139,11 +1139,21 @@ body.home::after {
   font-weight: bold;
   color: #003;
   margin-bottom: 0;
+  animation: slider 2s;
 }
 
 .site-title a {
   text-decoration: none;
   font-size: clamp(0.9rem, -0.875rem + 6.333vw, 2.5rem);
+}
+
+@keyframes slider {
+  0% {
+    position: -100px;
+  }
+  100% {
+    position: 100px;
+  }
 }
 
 .site-description {
@@ -1278,6 +1288,8 @@ DESKTOP
   width: 300vw;
   height: 20vh;
   transition: transform .5s;
+  /* animation background carrousel 1 */
+  /* animation background carrousel 1 */
 }
 
 .carrousel div {
@@ -1300,9 +1312,58 @@ DESKTOP
   background-color: #435abe;
 }
 
+.carrousel .carr1 {
+  animation: carr1 4s linear infinite alternate both;
+}
+
+@keyframes carr1 {
+  0% {
+    background: #be4343;
+  }
+  50% {
+    background: #c76060;
+  }
+  100% {
+    background: #cc7b7b;
+  }
+}
+
+.carrousel .carr2 {
+  animation: carr2 4s linear infinite alternate both;
+}
+
+@keyframes carr2 {
+  0% {
+    background: #4dbe43;
+  }
+  50% {
+    background: #6bb864;
+  }
+  100% {
+    background: #88bb83;
+  }
+}
+
+.carrousel .carr3 {
+  animation: carr3 4s linear infinite alternate both;
+}
+
+@keyframes carr3 {
+  0% {
+    background: #435abe;
+  }
+  50% {
+    background: #5c6ec0;
+  }
+  100% {
+    background: #7b88c0;
+  }
+}
+
 #un, #deux, #trois {
   border-radius: 50%;
-  margin: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #un:hover, #deux:hover, #trois:hover {
