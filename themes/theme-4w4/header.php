@@ -46,6 +46,21 @@
 		</div><!-- .site-branding -->
 
 		<!-- début carrousel -->
+
+		<!-- CARROUSEL ////////////////// -->
+		<section class="carrousel"> 
+			<div class="carr1">1</div>
+			<div class="carr2">2</div>
+			<div class="carr3">3</div>
+		</section>
+
+		<section class="boutRadio">
+			<input type="radio" id="un" name="carrousel" checked>
+			<input type="radio" id="deux" name="carrousel">
+			<input type="radio" id="trois" name="carrousel">
+		</section> 
+	<!-- FIN CARROUSEL ////////////////// -->
+
 		<?php
 		if ( is_front_page()) : ?>
 		<!-- section colorée -->
