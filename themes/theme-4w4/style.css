@@ -1098,7 +1098,7 @@ body.home {
 }
 
 body.home #primary {
-  margin-left: .5%;
+  /* margin-left: -.2%; */
   width: 100vw;
 }
 
@@ -1218,6 +1218,7 @@ header h1.page-title {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   /* transition 1 : hover */
 }
 
@@ -1263,8 +1264,8 @@ body.home .site-title {
 /* -----------------------------------------------
 TABLETTE
 -------------------------------------------------- */
-@media screen and (max-width: 1024px) and (min-width: 740px) {
-  .list-cours section article {
+@media only screen and (min-width: 740px) {
+  .list-cours section.bloc article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1281,8 +1282,8 @@ TABLETTE
 /* -----------------------------------------------
 DESKTOP
 -------------------------------------------------- */
-@media screen and (min-width: 1024px) {
-  .list-cours section article {
+@media only screen and (min-width: 1024px) {
+  .list-cours section.bloc article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
