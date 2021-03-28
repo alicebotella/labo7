@@ -4,6 +4,7 @@
   height: 30vh;
   transition: transform .5s;
   flex-wrap: nowrap;
+  margin-left: 2%;
 
   .slide__conteneur {
     width: 100vw;
@@ -17,7 +18,7 @@
       width: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center; //space-between
 
       img {
         display: block;

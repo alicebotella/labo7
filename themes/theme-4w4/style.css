@@ -1198,7 +1198,9 @@ header h1.page-title {
   /* section.list-cours */
   display: flex;
   flex-direction: column;
+  margin-left: -5%;
   /* align-items: center; */
+  /* justify-content: center; */
   /* transition 2 : hover */
 }
 
@@ -1400,6 +1402,7 @@ DESKTOP
   height: 30vh;
   transition: transform .5s;
   flex-wrap: nowrap;
+  margin-left: 2%;
 }
 
 .carrousel-2 .slide__conteneur {
@@ -1414,7 +1417,7 @@ DESKTOP
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .carrousel-2 .slide__conteneur .slide img {
