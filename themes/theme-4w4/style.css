@@ -1139,6 +1139,8 @@ body.home::after {
   font-weight: bold;
   color: #003;
   margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
   animation: slider 2s;
 }
 

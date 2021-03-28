@@ -8,4 +8,4 @@ Dépôt: https://github.com/alicebotella/labo5
 
 Page gitHub: https://alicebotella.github.io/labo5/
 
-Page Webdev: 
+Page Webdev: https://e1995379.webdev.cmaisonneuve.qc.ca/design/blogtest/
