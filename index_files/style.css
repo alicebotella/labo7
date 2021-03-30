@@ -1139,6 +1139,8 @@ body.home::after {
   font-weight: bold;
   color: #003;
   margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
   animation: slider 2s;
 }
 
@@ -1452,6 +1454,18 @@ DESKTOP
 
 .carrousel-2 .slide__conteneur:nth-of-type(3) {
   background-color: #435abe;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(4) {
+  background-color: #b35dd4;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(5) {
+  background-color: #f18e4c;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(6) {
+  background-color: #5ad3c3;
 }
 
 .ctrl-carrousel {
