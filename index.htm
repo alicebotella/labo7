@@ -28,15 +28,43 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-	<link rel="stylesheet" id="wp-block-library-css" href="./index_files/style.min.css" media="all">
+	<link rel="stylesheet" id="dashicons-css" href="./index_files/dashicons.min.css" media="all">
+<link rel="stylesheet" id="admin-bar-css" href="./index_files/admin-bar.min.css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./index_files/style.min.css" media="all">
 <link rel="stylesheet" id="theme-4w4-style-css" href="./index_files/style.css" media="all">
 <link rel="https://api.w.org/" href="http://localhost/4w4/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost/4w4/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://localhost/4w4/wp-includes/wlwmanifest.xml"> 
 <meta name="generator" content="WordPress 5.7">
-</head>
+<style media="print">#wpadminbar { display:none; }</style>
+	<style media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
+	</head>
 
-<body class="home blog hfeed no-sidebar">
-<div id="page" class="site">
+<body class="home blog logged-in admin-bar hfeed no-sidebar customize-support">
+	<script>
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+				request = true;
+	
+			b[c] = b[c].replace( rcs, ' ' );
+			// The customizer requires postMessage and CORS (if the site is cross domain).
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	</script>
+			<div id="wpadminbar" class="nojq mobile">
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Barre d’outils">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost/4w4/wp-admin/about.php"><span class="ab-icon"></span><span class="screen-reader-text">À propos de WordPress</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu"><li id="wp-admin-bar-about"><a class="ab-item" href="http://localhost/4w4/wp-admin/about.php">À propos de WordPress</a></li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu"><li id="wp-admin-bar-wporg"><a class="ab-item" href="https://fr.wordpress.org/">Site de WordPress-FR</a></li><li id="wp-admin-bar-documentation"><a class="ab-item" href="https://wpfr.net/support/">Documentation</a></li><li id="wp-admin-bar-support-forums"><a class="ab-item" href="https://wpfr.net/support">Forums de support</a></li><li id="wp-admin-bar-feedback"><a class="ab-item" href="https://wordpress.org/support/forum/requests-and-feedback">Vos retours</a></li></ul></div></li><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost/4w4/wp-admin/">TIM - Technique d'intégration multi…</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu"><li id="wp-admin-bar-dashboard"><a class="ab-item" href="http://localhost/4w4/wp-admin/">Tableau de bord</a></li></ul><ul id="wp-admin-bar-appearance" class="ab-submenu"><li id="wp-admin-bar-themes"><a class="ab-item" href="http://localhost/4w4/wp-admin/themes.php">Thèmes</a></li><li id="wp-admin-bar-widgets"><a class="ab-item" href="http://localhost/4w4/wp-admin/widgets.php">Widgets</a></li><li id="wp-admin-bar-menus"><a class="ab-item" href="http://localhost/4w4/wp-admin/nav-menus.php">Menus</a></li><li id="wp-admin-bar-background" class="hide-if-customize"><a class="ab-item" href="http://localhost/4w4/wp-admin/themes.php?page=custom-background">Arrière-plan</a></li><li id="wp-admin-bar-header" class="hide-if-customize"><a class="ab-item" href="http://localhost/4w4/wp-admin/themes.php?page=custom-header">En-tête</a></li></ul></div></li><li id="wp-admin-bar-customize" class="hide-if-no-customize"><a class="ab-item" href="http://localhost/4w4/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%2F4w4%2F">Personnaliser</a></li><li id="wp-admin-bar-updates"><a class="ab-item" href="http://localhost/4w4/wp-admin/update-core.php" title="2 mises à jour d’extensions, Mettre à jour les traductions"><span class="ab-icon"></span><span class="ab-label">3</span><span class="screen-reader-text">2 mises à jour d’extensions, Mettre à jour les traductions</span></a></li><li id="wp-admin-bar-comments"><a class="ab-item" href="http://localhost/4w4/wp-admin/edit-comments.php"><span class="ab-icon"></span><span class="ab-label awaiting-mod pending-count count-0" aria-hidden="true">0</span><span class="screen-reader-text comments-in-moderation-text">0 commentaire en modération</span></a></li><li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost/4w4/wp-admin/post-new.php"><span class="ab-icon"></span><span class="ab-label">Créer</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu"><li id="wp-admin-bar-new-post"><a class="ab-item" href="http://localhost/4w4/wp-admin/post-new.php">Article</a></li><li id="wp-admin-bar-new-media"><a class="ab-item" href="http://localhost/4w4/wp-admin/media-new.php">Fichier média</a></li><li id="wp-admin-bar-new-page"><a class="ab-item" href="http://localhost/4w4/wp-admin/post-new.php?post_type=page">Page</a></li><li id="wp-admin-bar-new-user"><a class="ab-item" href="http://localhost/4w4/wp-admin/user-new.php">Compte</a></li></ul></div></li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu"><li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="http://localhost/4w4/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150"><label for="adminbar-search" class="screen-reader-text">Rechercher</label><input type="submit" class="adminbar-button" value="Rechercher"></form></div></li><li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item" aria-haspopup="true" href="http://localhost/4w4/wp-admin/profile.php">Bonjour, <span class="display-name">root</span><img alt="" src="./index_files/ecc971e8e90a177c894c9f94a0216e68.png" srcset="http://2.gravatar.com/avatar/ecc971e8e90a177c894c9f94a0216e68?s=52&amp;d=mm&amp;r=g 2x" class="avatar avatar-26 photo" height="26" width="26" loading="lazy"></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu"><li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="http://localhost/4w4/wp-admin/profile.php"><img alt="" src="./index_files/ecc971e8e90a177c894c9f94a0216e68(1).png" srcset="http://2.gravatar.com/avatar/ecc971e8e90a177c894c9f94a0216e68?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy"><span class="display-name">root</span></a></li><li id="wp-admin-bar-edit-profile"><a class="ab-item" href="http://localhost/4w4/wp-admin/profile.php">Modifier le profil</a></li><li id="wp-admin-bar-logout"><a class="ab-item" href="http://localhost/4w4/wp-login.php?action=logout&amp;_wpnonce=c23caa214b">Se déconnecter</a></li></ul></div></li></ul>			</div>
+						<a class="screen-reader-shortcut" href="http://localhost/4w4/wp-login.php?action=logout&amp;_wpnonce=c23caa214b">Se déconnecter</a>
+					</div>
+
+		<div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="http://localhost/4w4/#primary">Skip to content</a>
 
 	<header id="masthead" class="site-header">
@@ -82,7 +110,7 @@ img.emoji {
 	<li id="menu-item-248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a href="http://localhost/4w4/le-respect/">Respect</a></li>
 </ul>
 </li>
-<li id="menu-item-226" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-226"><a href="http://localhost/4w4/#">Session-1</a>
+<li id="menu-item-226" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-226"><a href="http://localhost/4w4/#">Session 1</a>
 <ul class="sub-menu">
 	<li id="menu-item-249" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-249"><a href="http://localhost/4w4/2020/10/07/582-1j1-animation-et-interactivite-en-jeu-75h/">Animation et interactivité en jeu</a></li>
 	<li id="menu-item-250" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-250"><a href="http://localhost/4w4/2020/10/07/description-du-cours-582-1m1-creation-video-2/">582-1M1 Création vidéo (75h)</a></li>
@@ -90,7 +118,7 @@ img.emoji {
 	<li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-252"><a href="http://localhost/4w4/2020/10/07/582-1w1-mise-en-page-web-75h/">582-1W1 Mise en page Web (75h)</a></li>
 </ul>
 </li>
-<li id="menu-item-227" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-227"><a href="http://localhost/4w4/#">Session-2</a>
+<li id="menu-item-227" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-227"><a href="http://localhost/4w4/#">Session 2</a>
 <ul class="sub-menu">
 	<li id="menu-item-253" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-253"><a href="http://localhost/4w4/2020/10/07/582-2j2creation-de-jeu-2d-60h/">582-2J2	Création de jeu 2D (60h)</a></li>
 	<li id="menu-item-254" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-254"><a href="http://localhost/4w4/2020/10/07/582-2m3-effets-speciaux-et-animation-60h/">582-2M3 Effets spéciaux et animation (60h)</a></li>
@@ -98,7 +126,7 @@ img.emoji {
 	<li id="menu-item-256" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-256"><a href="http://localhost/4w4/2020/10/07/582-2w2animation-et-interactivite-web-75h/">582-2W2	Animation et interactivité Web (75h)</a></li>
 </ul>
 </li>
-<li id="menu-item-228" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-228"><a href="http://localhost/4w4/#">Session-3</a>
+<li id="menu-item-228" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-228"><a href="http://localhost/4w4/#">Session 3</a>
 <ul class="sub-menu">
 	<li id="menu-item-257" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-257"><a href="http://localhost/4w4/2020/10/07/582-3c1-design-dinteractivite-75h/">582-3C1 Design d’interactivité (75h)</a></li>
 	<li id="menu-item-258" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-258"><a href="http://localhost/4w4/2020/10/07/582-3j3-creation-de-jeu-3d-75h/">582-3J3 Création de jeu 3D (75h)</a></li>
@@ -106,7 +134,7 @@ img.emoji {
 	<li id="menu-item-260" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-260"><a href="http://localhost/4w4/2020/10/07/582-3w3-creation-de-sites-web-dynamiques-90h/">582-3W3 Création de sites Web dynamiques (90h)</a></li>
 </ul>
 </li>
-<li id="menu-item-229" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-229"><a href="http://localhost/4w4/#">Session-4</a>
+<li id="menu-item-229" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-229"><a href="http://localhost/4w4/#">Session 4</a>
 <ul class="sub-menu">
 	<li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-261"><a href="http://localhost/4w4/2020/10/07/582-4c2-gestion-de-projets-multimedias/">582-4C2 Gestion de projets multimédias (45h)</a></li>
 	<li id="menu-item-263" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-263"><a href="http://localhost/4w4/2020/10/07/582-4mb-animation-3d-75h/">582-4MB Animation 3D (75h)</a></li>
@@ -115,7 +143,7 @@ img.emoji {
 	<li id="menu-item-265" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-265"><a href="http://localhost/4w4/2020/10/07/582-4w4-conception-dinterfaces-et-developpement-web/">582-4W4 Conception d’interfaces et développement Web (90h)</a></li>
 </ul>
 </li>
-<li id="menu-item-230" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-230"><a href="http://localhost/4w4/#">Session-5</a>
+<li id="menu-item-230" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-230"><a href="http://localhost/4w4/#">Session 5</a>
 <ul class="sub-menu">
 	<li id="menu-item-266" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-266"><a href="http://localhost/4w4/2021/03/08/582-5ja-experimentation-en-jeu-volet-programmation-90h/">582-5JA  Expérimentation en jeu – volet programmation (90h)</a></li>
 	<li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-267"><a href="http://localhost/4w4/2021/03/08/582-5jb-experimentation-en-jeu-volet-creation-90h/">582-5JB Expérimentation en jeu – volet création (90h)</a></li>
@@ -125,7 +153,7 @@ img.emoji {
 	<li id="menu-item-271" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-271"><a href="http://localhost/4w4/2020/10/07/582-5w5-projet-web-en-equipe-105h/">582-5W5	Projet Web en équipe (105h)</a></li>
 </ul>
 </li>
-<li id="menu-item-231" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-231"><a href="http://localhost/4w4/#">Session-6</a>
+<li id="menu-item-231" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-231"><a href="http://localhost/4w4/#">Session 6</a>
 <ul class="sub-menu">
 	<li id="menu-item-272" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-272"><a href="http://localhost/4w4/2021/03/08/582-6n2-projet-de-fin-detudes-120h/">582-6N2 Projet de fin d’études (120h)</a></li>
 	<li id="menu-item-273" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-273"><a href="http://localhost/4w4/2020/10/07/582-6n3-stage-285h/">582-6N3 Stage (285h)</a></li>
@@ -176,7 +204,7 @@ img.emoji {
 		<input type="radio" name="rad-carrousel"> 
 	</section>--> <!-- FIN CARROUSEL ////////////////// -->
 
-<!-- ARCHIVE.PHP --> ///////////////// FRONT-PAGE.PHP
+<!-- ARCHIVE.PHP -->
 	<main id="primary" class="site-main">
 	
 
@@ -186,7 +214,7 @@ img.emoji {
 			
 		<section class="list-cours">
 																		<h2>Web</h2>
-					<section class="carrousel-2">  <!-- ?=si := sinon -->
+					<section class="carrousel-2" style="transform: translateX(0vw);">  <!-- ?=si := sinon -->
 					
 
 								
@@ -400,6 +428,8 @@ img.emoji {
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<script src="./index_files/hoverintent-js.min.js.téléchargement" id="hoverintent-js-js"></script>
+<script src="./index_files/admin-bar.min.js.téléchargement" id="admin-bar-js"></script>
 <script src="./index_files/navigation.js.téléchargement" id="theme-4w4-navigation-js"></script>
 <script src="./index_files/burger.js.téléchargement" id="theme-4w4-burger-js"></script>
 <script src="./index_files/carrousel.js.téléchargement" id="theme-4w4-carrousel-js"></script>

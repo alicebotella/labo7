@@ -1200,7 +1200,7 @@ header h1.page-title {
   /* section.list-cours */
   display: flex;
   flex-direction: column;
-  margin-left: -5%;
+  margin-left: -6%;
   /* align-items: center; */
   /* justify-content: center; */
   /* transition 2 : hover */
@@ -1404,7 +1404,7 @@ DESKTOP
   height: 30vh;
   transition: transform .5s;
   flex-wrap: nowrap;
-  margin-left: 2%;
+  margin-left: 3%;
 }
 
 .carrousel-2 .slide__conteneur {
@@ -1420,6 +1420,7 @@ DESKTOP
   display: flex;
   align-items: center;
   justify-content: center;
+  /* margin-left: 2%; */
 }
 
 .carrousel-2 .slide__conteneur .slide img {
@@ -1492,7 +1493,7 @@ Bouton burger
   height: 2rem;
   border-radius: 50%;
   overflow: hidden;
-  margin-left: 1rem;
+  margin-left: .5rem;
 }
 
 #burger div {

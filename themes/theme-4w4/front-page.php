@@ -52,7 +52,7 @@ get_header();
 		<input type="radio" name="rad-carrousel"> 
 	</section>--> <!-- FIN CARROUSEL ////////////////// -->
 
-<!-- ARCHIVE.PHP --> ///////////////// FRONT-PAGE.PHP
+<!-- ARCHIVE.PHP -->
 	<main id="primary" class="site-main">
 	
 
