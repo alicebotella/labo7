@@ -1,5 +1,5 @@
-# Labo 6 #
-## Alice Botella-Vigneault ##
+Labo 6
+Alice Botella-Vigneault
 
 Site du TIM avec la grille des cours offerts
 
