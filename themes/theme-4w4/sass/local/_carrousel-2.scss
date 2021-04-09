@@ -4,7 +4,8 @@
   height: 30vh;
   transition: transform .5s;
   flex-wrap: nowrap;
-  margin-left: 3%;
+  /* margin-left: 1%; */
+  justify-content: center;
 
   .slide__conteneur {
     width: 100vw;

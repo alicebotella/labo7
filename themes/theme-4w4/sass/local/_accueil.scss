@@ -9,8 +9,12 @@ body.home {
     height: 100vh;
 
     #primary {
-        /* margin-left: -.2%; */
+        margin-left: 0;
         width: 100vw;
+
+        h1 {
+            text-align: center;
+        }
 
         p.session {
             font-size: 25px;
@@ -23,8 +27,6 @@ body.home {
             margin-left: 20px;
         }
     }
-    
-    
 }
 
 body.home::after {
@@ -96,6 +98,12 @@ header h1.page-title {
     color:rgb(30, 101, 167)
 }
 
+.page-title {
+    margin-left: -5%;
+    align-items: center;
+    justify-content: center;
+}
+
 /* .accueil{ //je n'arrive pas à ajouter la classe sur wordpress
     font-size: clamp(.8rem, #{"-0.875rem + 8.333vw"}, 2rem);
     ul{
@@ -112,7 +120,7 @@ header h1.page-title {
 .list-cours { /* section.list-cours */
     display: flex;
     flex-direction: column;
-    margin-left: -6%;
+    /* margin-left: -6%; */
     /* align-items: center; */
     /* justify-content: center; */
 

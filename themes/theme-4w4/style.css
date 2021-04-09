@@ -701,6 +701,7 @@ body {
 .main-navigation {
   display: block;
   width: 100vw;
+  /* margin-left: -.5%; */
   /* nav-menu (ul principal) */
 }
 
@@ -714,6 +715,7 @@ body {
   background-color: #000;
   text-align: left;
   left: 0;
+  padding-left: 3%;
   /* sub-menu */
 }
 
@@ -763,6 +765,10 @@ body {
   display: block;
   text-decoration: none;
   padding: .5rem;
+}
+
+.main-navigation a:nth-of-type(8) {
+  background-color: red;
 }
 
 /* fin de main-navigation */
@@ -821,10 +827,22 @@ menu tablet
     display: block;
     position: absolute;
     width: 300px;
+    animation: anim-sous-menu 0.5s both cubic-bezier(0.01, 0.06, 0, 0.99);
   }
   .main-navigation.toggled ul ul,
   .main-navigation ul ul {
     display: none;
+  }
+}
+
+@keyframes anim-sous-menu {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
   }
 }
 
@@ -1098,8 +1116,12 @@ body.home {
 }
 
 body.home #primary {
-  /* margin-left: -.2%; */
+  margin-left: 0;
   width: 100vw;
+}
+
+body.home #primary h1 {
+  text-align: center;
 }
 
 body.home #primary p.session {
@@ -1185,6 +1207,12 @@ header h1.page-title {
   color: #1e65a7;
 }
 
+.page-title {
+  margin-left: -5%;
+  align-items: center;
+  justify-content: center;
+}
+
 /* .accueil{ //je n'arrive pas à ajouter la classe sur wordpress
     font-size: clamp(.8rem, -0.875rem + 8.333vw, 2rem);
     ul{
@@ -1200,7 +1228,7 @@ header h1.page-title {
   /* section.list-cours */
   display: flex;
   flex-direction: column;
-  margin-left: -6%;
+  /* margin-left: -6%; */
   /* align-items: center; */
   /* justify-content: center; */
   /* transition 2 : hover */
@@ -1404,7 +1432,8 @@ DESKTOP
   height: 30vh;
   transition: transform .5s;
   flex-wrap: nowrap;
-  margin-left: 3%;
+  /* margin-left: 1%; */
+  justify-content: center;
 }
 
 .carrousel-2 .slide__conteneur {

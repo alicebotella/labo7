@@ -1,6 +1,7 @@
 .main-navigation {
 	display: block;
 	width: 100vw;
+	/* margin-left: -.5%; */
 	
 	ul {
 		display: none;
@@ -12,6 +13,7 @@
 		background-color: #000;
 		text-align: left;
 		left: 0;
+		padding-left: 3%;
 	
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -26,6 +28,7 @@
 				padding-left: 20px;
 			}	
 		} /* sub-menu */
+
 
 		li:hover > ul,
 		li.focus > ul {
@@ -66,6 +69,10 @@
 		text-decoration: none;
 		padding: .5rem;
 	}
+
+	a:nth-of-type(8){
+		background-color: red;
+	  }
 
 	.current_page_item > a,
 	.current-menu-item > a,
@@ -123,15 +130,27 @@ menu tablet
 		a[href="#"]::after {
 			display: none;
 		}
-		li:hover ul {
-			display: block;
-			position: absolute;
+		li:hover ul { // sous menu
+			display: block; //flex
+			position: absolute; //supp + justify-content:flex-start
 			width: 300px;
+			animation : anim-sous-menu .5s both cubic-bezier(.01,.06,0,.99);
 		}
 
 		ul {
 			display: none;
 		}
+	}
+}
+
+@keyframes anim-sous-menu {
+	0% {
+		opacity: 0;
+		transform: translateX(0) translateY(100px) ;
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0) translateY(0) ;
 	}
 }
 
