@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     margin: .5%;
+    border-radius: 10px;
     
 
     .slide {
@@ -46,6 +47,7 @@
     } //fin slide
     &:nth-of-type(1){
       background-color: rgb(190, 67, 67);
+      /* animation: couleur1 2s; */
     }
     &:nth-of-type(2){
       background-color: rgb(77, 190, 67);
@@ -61,6 +63,32 @@
     }
     &:nth-of-type(6){
       background-color: rgb(90, 211, 195);
+    }
+
+    //anim hover
+    /* @keyframes couleur1 {
+      0% {position: -100px; background-color: rgb(190, 67, 67);}
+      100% {position: 100px; background-color: rgb(197, 123, 123);}
+    } */
+
+    //hover
+    &:nth-of-type(1):hover{
+      background-color: rgb(197, 123, 123);
+    }
+    &:nth-of-type(2):hover{
+      background-color: rgb(114, 196, 106);
+    }
+    &:nth-of-type(3):hover{
+      background-color: rgb(134, 146, 197);
+    }
+    &:nth-of-type(4):hover{
+      background-color: rgb(184, 121, 209);
+    }
+    &:nth-of-type(5):hover{
+    background-color: rgb(241, 171, 125);
+    }
+    &:nth-of-type(6):hover{
+      background-color: rgb(130, 216, 205);
     }
 
   } // fin slider__conteneur
