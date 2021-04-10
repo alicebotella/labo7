@@ -1442,6 +1442,11 @@ DESKTOP
   align-items: center;
   justify-content: center;
   margin: .5%;
+  border-radius: 10px;
+  /* @keyframes couleur1 {
+      0% {position: -100px; background-color: rgb(190, 67, 67);}
+      100% {position: 100px; background-color: rgb(197, 123, 123);}
+    } */
 }
 
 .carrousel-2 .slide__conteneur .slide {
@@ -1476,6 +1481,7 @@ DESKTOP
 
 .carrousel-2 .slide__conteneur:nth-of-type(1) {
   background-color: #be4343;
+  /* animation: couleur1 2s; */
 }
 
 .carrousel-2 .slide__conteneur:nth-of-type(2) {
@@ -1496,6 +1502,30 @@ DESKTOP
 
 .carrousel-2 .slide__conteneur:nth-of-type(6) {
   background-color: #5ad3c3;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(1):hover {
+  background-color: #c57b7b;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(2):hover {
+  background-color: #72c46a;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(3):hover {
+  background-color: #8692c5;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(4):hover {
+  background-color: #b879d1;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(5):hover {
+  background-color: #f1ab7d;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(6):hover {
+  background-color: #82d8cd;
 }
 
 .ctrl-carrousel {
