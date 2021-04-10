@@ -2,6 +2,8 @@ Labo 7
 
 Alice Botella-Vigneault
 
+TIM 2021
+
 Site du TIM avec la grille des cours offerts
 
 Dépôt: https://github.com/alicebotella/labo7

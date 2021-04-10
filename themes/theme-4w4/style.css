@@ -1122,6 +1122,7 @@ body.home #primary {
 
 body.home #primary h1 {
   text-align: center;
+  margin-left: 1.5%;
 }
 
 body.home #primary p.session {
@@ -1428,16 +1429,15 @@ DESKTOP
 --------------------------------------------- */
 .carrousel-2 {
   display: flex;
-  width: 600vw;
+  width: 300vw;
   height: 30vh;
   transition: transform .5s;
   flex-wrap: nowrap;
-  /* margin-left: 1%; */
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .carrousel-2 .slide__conteneur {
-  width: 100vw;
+  width: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1506,6 +1506,18 @@ DESKTOP
 
 .ctrl-carrousel input {
   margin: 2rem;
+}
+
+.ctrl-carrousel input:nth-of-type(4) {
+  display: none;
+}
+
+.ctrl-carrousel input:nth-of-type(5) {
+  display: none;
+}
+
+.ctrl-carrousel input:nth-of-type(6) {
+  display: none;
 }
 
 /* Local burger

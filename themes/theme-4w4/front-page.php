@@ -79,20 +79,21 @@ get_header();
 					<?php if ($precedent != "XXXXXX"): ?>
 						</section>
 					<?php endif; ?>
-					<?php if ($precedent == "Web"): ?>	
+					<?php if (in_array($precedent, ['Web', 'Jeu', 'Spécifique'])): ?>	
 						<section class="ctrl-carrousel">
-							<?php echo $ctrl_radio; ?>
+							<?php echo $ctrl_radio; 
+							$ctrl_radio = '';?>
 						</section>
 					<?php endif; ?>
 					<h2><?php echo $tPropriété['typeCours'] ?></h2>
-					<section <?php echo ($tPropriété['typeCours'] == 'Web' ? 'class="carrousel-2"' : 'class="bloc"'); ?>>  <!-- ?=si := sinon -->
+					<section <?php echo (in_array($tPropriété['typeCours'], ['Web', 'Jeu', 'Spécifique']) ? 'class="carrousel-2"' : 'class="bloc"'); ?>>  <!-- ?=si := sinon -->
 					
 
 				<?php endif; ?>
 				<?php
-				if ($tPropriété['typeCours'] == "Web"):
+				if (in_array($tPropriété['typeCours'], ['Web', 'Jeu', 'Spécifique']) ):
 					get_template_part( 'template-parts/content', 'carrousel' );
-					$ctrl_radio .= '<input type="radio" name="rad-carrousel">'; //génère input dans var
+					$ctrl_radio .= '<input type="radio" name="rad-'. $tPropriété['typeCours'].'">'; //génère input dans var
 				else:
 					get_template_part( 'template-parts/content', 'bloc' );
 				endif;
